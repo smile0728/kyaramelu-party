@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>きゃらめるパーティー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css"></head>
+<body>
+    <div id="password-overlay">
+        <div id="password-box">
+            <p>招待コードを入力してください</p>
+            <input type="password" id="password-input">
+            <button onclick="checkPassword()">入場</button>
+        </div>
+    </div>
+    
+    <header>
+        <h1>きゃらめるパーティーへようこそ</h1>
+    </header>
+
+    <main>
+        <section id="bgm">
+            <h2>BGMかける？</h2>
+            <button id="play-bgm-button">ミュージックスタート！！</button>
+        </section>
+        <section id="message">
+            <h2>おてがみ</h2>
+            <div class="message-container">
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>すまいる</h3>
+                        <img src="./public/smile-photo.png" alt="すまいるのメッセージ用画像" width="150" height="150">
+                        <p>きゃらめるへ</p>
+                        <p>お誕生日おめでとう！</p>
+                        <p>いつもそばにいてくれてありがとう。</p>
+
+                        <p>このサイトは</p>
+                        <p>これまでの思い出を振り返りながら</p>
+                        <p>感謝の気持ちを伝えるために作ったよ。</p>
+                        <p>これからも色々な思い出を作っていこうね！</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>帆夏さん</h3>
+                        <img src="./public/honoka-photo.png" alt="帆夏さんのメッセージ用画像" width="150" height="150">
+                        <p>きゃるちゃんお誕生日おめでとう🫶</p>
+                        <p>会う機会は減っちゃったけど</p>
+                        <p>きゃるちゃんはずっと変わらず可愛くて</p>
+                        <p>頑張り屋さんのままだなぁ〜</p>
+                        <p>と思いながら投稿楽しんで観てます👀💓</p>
+                        <p>今度お家ご招待するね〜〜〜🏠</p>
+                        <p>今までで</p>
+                        <p>いちばん、楽しい1年になりますように💭</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>冬紀さん</h3>
+                        <img src="./public/fuyu-photo.png" alt="冬紀さんのメッセージ用画像" width="150" height="150">
+                        <p>きゃるちゃん！</p>
+                        <p>お誕生日おめでとう〜！</p>
+
+                        <p>ここ数年会えてないけど、</p>
+                        <p>またリモートコラボももちろんしたいし、</p>
+                        <p>遊ぼう詐欺しまくってるので</p>
+                        <p>本当に遊びましょうね！？</p>
+                        <p>イラストも可愛くて</p>
+                        <p>Tシャツをきゃるちゃんに頼んで</p>
+                        <p>本当に良かったと思ってます！</p>
+                        <p>ありがとうございます！</p>
+
+                        <p>絶対いい一年にしてね！</p>
+                        <p>きゃるちゃんのニコニコ笑顔で</p>
+                        <p>嫌なことも吹っ飛ばせ〜！！</p>
+                        <p>冬紀より</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>零さん</h3>
+                        <img src="./public/zero-photo.png" alt="零さんのメッセージ用画像" width="150" height="150">
+                        <p>きゃるちゃん！</p>
+                        <p>お誕生日おめでとうございます🎁🎉🎂</p>
+                        <p>しばらく会えてないけどお元気ですかっ</p>
+                        <p>私はとっても元気です💪</p>
+
+                        <p>今も昔も変わらず可愛くてほわほわしてて、</p>
+                        <p>とーっても優しいきゃるちゃんが</p>
+                        <p>大好きです🫶</p>
+
+                        <p>前にあろはーずの2人と踊ったアイボリーや、</p>
+                        <p>きゃるちゃんと踊った</p>
+                        <p>ハイドアンドシークなど！！</p>
+
+                        <p>予定が合えばぜひ動画化したいなっ</p>
+                        <p>て密かに思ったりしてます(´ω`)💙</p>
+
+                        <p>これからもきゃるちゃんのペースで👍</p>
+
+                        <p>またおでかけもしようね〜！</p>
+
+                        <p>きゃるちゃんにとって</p>
+                        <p>素敵な一年になりますように☺️🫶</p>
+
+                        <p>零より</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>まにまにキムチさん</h3>
+                        <img src="./public/kimu-photo.png" alt="まにまにキムチさんのメッセージ用画像" width="150" height="150">
+                        <p>きゃるちゃんお誕生日おめでとう✨</p>
+                        <p>笑顔がかわいくてふわふわなきゃるちゃん！</p>
+                        <p>話す時にいつもおめめをきらきらさせて</p>
+                        <p>話してくれるかわいいきゃるちゃんが</p>
+                        <p>大好きだよ！</p>
+                        <p>そして好きを全力で伝えてくれるので</p>
+                        <p>とっても嬉しくて幸せな気持ちになります、</p>
+                        <p>ありがとう🫶</p>
+                        <p>きゃるちゃんが楽しい！幸せ！</p>
+                        <p>って思える事が沢山ある1年に</p>
+                        <P>なりますように☺️</p>
+                    </div>
+                </div>        
+                <div class="message-box">
+                    <div class="message-content">
+                        <h3>美雲 凛さん／鈴蘭さん</h3>
+                        <img src="./public/suzuko-photo.png" alt="鈴蘭さんのメッセージ用画像" width="150" height="150">
+                        <p>きゃるお誕生日おめでとう！</p>
+                        <p>もう何年も会えてないけど</p>
+                        <p>今でもお友達で居続けてくれて、</p>
+                        <p>こうやってお誕生日のお祝いが出来て</p>
+                        <p>とってもとっても嬉しいよ☺️</p>
+
+                        <p>あろはーずの活動もインスタやYouTubeで</p>
+                        <p>ちょこちょこ見て、</p>
+                        <p>相変わらず仲良しなふたりの姿を見て
+                        <p>いつもほっこりさせて貰ってます🙌</p>
+
+                        <p>また一緒に遊びに行く機会が</p>
+                        <p>作れたら嬉しいです！</p>
+                        <p>これからもきゃるが毎日笑顔で</p>
+                        <p>楽しく過ごせますように♪</p>
+                    </div>
+                </div>        
+        </section>
+
+        <section id="photos">
+            <h2>思い出のアルバム</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="./public/memory1.png" alt="思い出の写真1" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory2.png" alt="思い出の写真2" width="100" height="100" >
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory3.png" alt="思い出の写真3" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory4.png" alt="思い出の写真4" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory5.png" alt="思い出の写真5" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory6.png" alt="思い出の写真6" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory7.png" alt="思い出の写真7" width="100" height="100">
+                </div>
+                <div class="photo-card">
+                    <img src="./public/memory8.png" alt="思い出の写真8" width="100" height="100">
+                </div>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>愛言葉Ⅳ</h2>
+            <div class="video-container">
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/r4F5xm-cN88" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen 
+                title="愛言葉Ⅳ" 
+                loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2>プレゼントをかけて全問正解をめざせ！バースデークイズ！！</h2>
+            <div id="quiz-container">
+                <div id="question-text"></div>
+                <div id="answer-buttons"></div>
+                <div id="quiz-result"></div>
+                <button id="reset-button" style="display:none;">もう一度挑戦する</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 20250904 きゃらめるパーティー 主催　すまいる</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
