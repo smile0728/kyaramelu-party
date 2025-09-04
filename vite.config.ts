@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/kyaramelu-party/'
+    base: '/kyaramelu-party/',
+    build: {
+    outDir: 'docs' 
+    }
 })
